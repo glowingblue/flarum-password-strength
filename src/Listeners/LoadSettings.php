@@ -1,5 +1,5 @@
 <?php
-namespace TheTurk\PasswordStrength\Listeners;
+namespace GlowingBlue\PasswordStrength\Listeners;
 
 use Flarum\Api\Event\Serializing;
 use Flarum\Api\Serializer\ForumSerializer;
@@ -40,7 +40,7 @@ class LoadSettings
     public function prepareApiAttributes(Serializing $event)
     {
         if ($event->isSerializer(ForumSerializer::class)) {
-            $settingsPrefix = 'the-turk-password-strength.';
+            $settingsPrefix = 'glowingblue-password-strength.';
 
             $event->attributes += [
                 'psWeakColor' => 'rgb(' .

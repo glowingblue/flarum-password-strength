@@ -1,6 +1,6 @@
 # Password Strength Indicator for Flarum
 
-[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/the-turk/flarum-password-strength/blob/master/LICENSE) [![Latest Stable Version](https://img.shields.io/packagist/v/the-turk/flarum-password-strength.svg)](https://packagist.org/packages/the-turk/flarum-password-strength) [![Total Downloads](https://img.shields.io/packagist/dt/the-turk/flarum-password-strength.svg)](https://packagist.org/packages/the-turk/flarum-password-strength)
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/glowingblue/flarum-ext-password-strength/blob/master/LICENSE) [![Latest Stable Version](https://img.shields.io/packagist/v/glowingblue/password-strength.svg)](https://packagist.org/packages/glowingblue/password-strength) [![Total Downloads](https://img.shields.io/packagist/dt/glowingblue/password-strength.svg)](https://packagist.org/packages/glowingblue/password-strength)
 
 Low-budget password strength estimation for your forum.
 
@@ -17,13 +17,13 @@ Low-budget password strength estimation for your forum.
 ## Installation
 
 ```bash
-composer require the-turk/flarum-password-strength
+composer require glowingblue/password-strength
 ```
 
 ## Updating
 
 ```bash
-composer update the-turk/flarum-password-strength
+composer update glowingblue/password-strength
 php flarum cache:clear
 ```
 
@@ -33,12 +33,12 @@ Just enable the extension and customize if you wish.
 
 ## ToDo
 
-- I have no idea about how to implement it inside the reset password blade but you're very welcome to guide me or open a pull request on [GitHub](https://github.com/the-turk/flarum-password-strength).
+- I have no idea about how to implement it inside the reset password blade but you're very welcome to guide me or open a pull request on [GitHub](https://github.com/glowingblue/flarum-ext-password-strength).
 
 ## Links
 
 - [Flarum Discuss post](https://discuss.flarum.org/d/22624-password-strength-indicator)
-- [Source code on GitHub](https://github.com/the-turk/flarum-password-strength)
-- [Changelog](https://github.com/the-turk/flarum-password-strength/blob/master/CHANGELOG.md)
-- [Report an issue](https://github.com/the-turk/flarum-password-strength/issues)
-- [Download via Packagist](https://packagist.org/packages/the-turk/flarum-password-strength)
+- [Source code on GitHub](https://github.com/glowingblue/flarum-ext-password-strength)
+- [Changelog](https://github.com/glowingblue/flarum-ext-password-strength/blob/master/CHANGELOG.md)
+- [Report an issue](https://github.com/glowingblue/flarum-ext-password-strength/issues)
+- [Download via Packagist](https://packagist.org/packages/glowingblue/password-strength)

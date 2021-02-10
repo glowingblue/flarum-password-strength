@@ -4,9 +4,9 @@ import extractText from "flarum/utils/extractText";
 import LogInModal from "flarum/components/LogInModal";
 import SignUpModal from "flarum/components/SignUpModal";
 
-const localePrefix = "the-turk-password-strength.forum.";
+const localePrefix = "glowingblue-password-strength.forum.";
 
-app.initializers.add("the-turk-password-strength", () => {
+app.initializers.add("glowingblue-password-strength", () => {
   let hasLoaded = false;
   let isLoading = false;
   let strengthLabel;

@@ -2,8 +2,8 @@ import app from "flarum/app";
 import SettingsModal from "flarum/components/SettingsModal";
 import Switch from "flarum/components/Switch";
 
-const settingsPrefix = "the-turk-password-strength.";
-const localePrefix = "the-turk-password-strength.admin.settings.";
+const settingsPrefix = "glowingblue-password-strength.";
+const localePrefix = "glowingblue-password-strength.admin.settings.";
 
 export default class PasswordStrengthSettingsModal extends SettingsModal {
   title() {

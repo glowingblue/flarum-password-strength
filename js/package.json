@@ -1,5 +1,5 @@
 {
-  "name": "@the-turk/flarum-password-strength",
+  "name": "@glowingblue/password-strength",
   "description": "Low-budget password strength estimation for your Flarum forum.",
   "license": "MIT",
   "version": "1.0.2",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/the-turk/flarum-password-strength.git"
+    "url": "git://github.com/glowingblue/flarum-ext-password-strength.git"
   },
   "scripts": {
     "dev": "webpack --mode development --watch",

@@ -7,15 +7,15 @@
  * please view the LICENSE.md file that was distributed
  * with this source code.
  *
- * @package    the-turk/flarum-password-strength
- * @author     Hasan Özbey <hasanoozbey@gmail.com>
- * @copyright  2020
+ * @package    glowingblue/password-strength
+ * @author     Hasan Özbey <hasanoozbey@gmail.com>, Rafael Horvat <rafael.horvat@icloud.com>
+ * @copyright  2021
  * @license    The MIT License
  * @version    Release: 1.0.2
- * @link       https://github.com/the-turk/password-strength
+ * @link       https://github.com/glowingblue/flarum-ext-password-strength
  */
 
-namespace TheTurk\PasswordStrength;
+namespace GlowingBlue\PasswordStrength;
 
 use Flarum\Extend;
 use Illuminate\Contracts\Events\Dispatcher;
