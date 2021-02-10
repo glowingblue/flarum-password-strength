@@ -21,14 +21,14 @@ use Flarum\Extend;
 use Illuminate\Contracts\Events\Dispatcher;
 
 return [
-    (new Extend\Frontend('forum'))
-        ->css(__DIR__ . '/less/forum.less')
-        ->js(__DIR__.'/js/dist/forum.js'),
-    (new Extend\Frontend('admin'))
-        ->css(__DIR__ . '/less/admin.less')
-        ->js(__DIR__ . '/js/dist/admin.js'),
-    (new Extend\Locales(__DIR__ . '/locale')),
-    function (Dispatcher $events) {
-        $events->subscribe(Listeners\LoadSettings::class);
-    },
+	(new Extend\Frontend('forum'))
+		->css(__DIR__ . '/less/forum.less')
+		->js(__DIR__ . '/js/dist/forum.js'),
+	(new Extend\Frontend('admin'))
+		->css(__DIR__ . '/less/admin.less')
+		->js(__DIR__ . '/js/dist/admin.js'),
+	(new Extend\Locales(__DIR__ . '/locale')),
+	function (Dispatcher $events) {
+		$events->subscribe(Listeners\LoadSettings::class);
+	},
 ];
