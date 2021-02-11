@@ -1,5 +1,5 @@
 {
-  "name": "the-turk/flarum-password-strength",
+  "name": "glowingblue/password-strength",
   "description": "Low-budget password strength estimation for your Flarum forum.",
   "keywords": [
     "flarum",
@@ -9,31 +9,49 @@
   ],
   "type": "flarum-extension",
   "license": "MIT",
-  "authors": [{
-    "name": "Hasan Özbey",
-    "email": "hasanoozbey@gmail.com",
-    "homepage": "https://github.com/the-turk"
-  }],
+  "authors": [
+    {
+      "name": "Hasan Özbey",
+      "email": "hasanoozbey@gmail.com",
+      "homepage": "https://github.com/the-turk"
+    },
+    {
+      "name": "Rafael Horvat",
+      "email": "rafael.horvat@icloud.com",
+      "role": "Developer"
+    },
+    {
+      "name": "GlowingBlue",
+      "email": "dev@glowingblue.com",
+      "role": "Maintainer"
+    }
+  ],
   "support": {
-    "issues": "https://github.com/the-turk/flarum-password-strength/issues",
-    "source": "https://github.com/the-turk/flarum-password-strength"
+    "issues": "https://github.com/glowingblue/flarum-ext-password-strength/issues",
+    "source": "https://github.com/glowingblue/flarum-ext-password-strength",
+    "forum": "https://discuss.flarum.org/d/26191-gb-password-strength",
+    "email": "dev@glowingblue.com"
   },
   "require": {
-    "flarum/core": ">=0.1.0-beta.10 <0.1.0-beta.14"
+    "flarum/core": ">=0.1.0-beta.15 <0.1.0-beta.16"
   },
   "autoload": {
     "psr-4": {
-      "TheTurk\\PasswordStrength\\": "src/"
+      "GlowingBlue\\PasswordStrength\\": "src/"
     }
   },
   "extra": {
     "flarum-extension": {
-      "title": "Password Strength Indicator",
+      "title": "GB Password Strength",
+      "category": "feature",
       "icon": {
         "name": "fas fa-user-shield",
-        "backgroundColor": "#b72a2a",
+        "backgroundColor": "#00a7e3",
         "color": "#fff"
       }
+    },
+    "flagrow": {
+      "discuss": "https://discuss.flarum.org/d/26191-gb-password-strength"
     }
   }
 }
