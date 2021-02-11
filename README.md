@@ -37,7 +37,7 @@ Just enable the extension and customize if you wish.
 
 ## Links
 
-- [Flarum Discuss post](https://discuss.flarum.org/d/22624-password-strength-indicator)
+- [Flarum Discuss post](https://discuss.flarum.org/d/26191-gb-password-strength)
 - [Source code on GitHub](https://github.com/glowingblue/flarum-ext-password-strength)
 - [Changelog](https://github.com/glowingblue/flarum-ext-password-strength/blob/master/CHANGELOG.md)
 - [Report an issue](https://github.com/glowingblue/flarum-ext-password-strength/issues)

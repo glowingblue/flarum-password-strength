@@ -29,10 +29,11 @@
   "support": {
     "issues": "https://github.com/glowingblue/flarum-ext-password-strength/issues",
     "source": "https://github.com/glowingblue/flarum-ext-password-strength",
+    "forum": "https://discuss.flarum.org/d/26191-gb-password-strength",
     "email": "dev@glowingblue.com"
   },
   "require": {
-    "flarum/core": ">=0.1.0-beta.10 <0.1.0-beta.14"
+    "flarum/core": ">=0.1.0-beta.15 <0.1.0-beta.16"
   },
   "autoload": {
     "psr-4": {
@@ -41,12 +42,16 @@
   },
   "extra": {
     "flarum-extension": {
-      "title": "Password Strength Indicator",
+      "title": "GB Password Strength",
+      "category": "feature",
       "icon": {
         "name": "fas fa-user-shield",
-        "backgroundColor": "#b72a2a",
+        "backgroundColor": "#00a7e3",
         "color": "#fff"
       }
+    },
+    "flagrow": {
+      "discuss": "https://discuss.flarum.org/d/26191-gb-password-strength"
     }
   }
 }

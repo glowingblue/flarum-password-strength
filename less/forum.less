@@ -1,17 +1,17 @@
 .LogInModal,
 .SignUpModal {
-	.Password-group {
+	.PasswordField {
 		position: relative;
 
-		input.togglable {
+		.FormControl.togglable {
 			padding-right: 50px;
 			padding-left: 50px;
 		}
 
-		i.password-toggle {
+		.EyeButton {
 			position: absolute;
 			width: 20px;
-			top: 17px;
+			top: 13px;
 			right: 20px;
 			font-size: 16px;
 			cursor: pointer;
@@ -19,10 +19,13 @@
 	}
 }
 
-.SignUpModal .strengthIndicator {
-	display: none;
+.SignUpModal .StrengthIndicator {
+	opacity: 0;
+	&.active {
+		opacity: 1;
+	}
 
-	& > .strengthIndicator--flex {
+	.StrengthIndicator-container {
 		margin-top: 10px;
 		width: 100%;
 		display: -webkit-box;
@@ -31,40 +34,36 @@
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
+	}
 
-		& > .strengthIndicator--pills {
-			width: 100%;
-			height: 5px;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			align-items: center;
-			-webkit-box-pack: justify;
-			-ms-flex-pack: justify;
-			justify-content: space-between;
+	.StrengthIndicator-pills {
+		width: 100%;
+		height: 5px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
 
-			div {
-				border-radius: @border-radius;
-				width: 31%;
-				padding: 2.5px;
-
-				&.pill--gray {
-					background-color: @control-color !important;
-					opacity: 0.3;
-				}
-			}
+		.StrengthPill {
+			background-color: fade(@control-color, 30%);
+			border-radius: @border-radius;
+			width: 31%;
+			padding: 2.5px;
 		}
+	}
 
-		& > .strengthIndicator--label {
-			width: 100%;
-			text-align: left;
+	.StrengthIndicator-label {
+		width: 100%;
+		text-align: left;
 
-			span {
-				font-weight: bold;
-				padding-left: 13px;
-			}
+		span {
+			font-weight: bold;
+			padding-left: 13px;
 		}
 	}
 }
