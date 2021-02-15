@@ -13,6 +13,7 @@ Low-budget password strength estimation for your forum.
 - Based on [zxcvbn](https://github.com/dropbox/zxcvbn) (by [DropBox](https://github.com/dropbox)).
 - Password strength is labeled as 'Weak', 'Could be stronger' and 'Strong'.
 - Customizable display modes.
+- Compatible with `nearata/flarum-ext-signup-confirm-password`.
 
 ## Installation
 
@@ -26,6 +27,9 @@ composer require glowingblue/password-strength
 composer update glowingblue/password-strength
 php flarum cache:clear
 ```
+
+## Conflicts
+- `glowingblue/password-strength` doesn't work with `therealsujitk/flarum-ext-show-password` wich can be removed, as `glowingblue/password-strength` adds a very similar functionnality.
 
 ## Usage
 
