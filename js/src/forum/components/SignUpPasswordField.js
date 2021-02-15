@@ -40,7 +40,7 @@ export default class SignUpPasswordField extends Component {
 
 			<div className='Form-group PasswordField'>
 				<input
-					className='FormControl togglable'
+					className={`FormControl ${settings('enablePasswordToggle') ? 'togglable' : ''}`}
 					name='password'
 					type={showingPassword() ? 'text' : 'password'}
 					placeholder={extractText(t('core.forum.sign_up.password_placeholder'))}
