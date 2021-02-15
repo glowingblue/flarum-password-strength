@@ -35,11 +35,31 @@ app.initializers.add(slug, () => {
 
 	extend(SignUpModal.prototype, 'fields', function (items) {
 		if (!this.attrs.token) {
+			const hasConfirmFiled =
+				items.has('confirmPassword') && this.confirmPassword !== undefined;
+
 			items.replace(
 				'password',
-				<SignUpPasswordField showingPassword={this.showingPassword.bind(this)} />,
+				<SignUpPasswordField
+					parent_this={this}
+					showingPassword={this.showingPassword.bind(this)}
+					hasConfirmFiled={hasConfirmFiled}
+				/>,
 				10
 			);
+
+			if (hasConfirmFiled) {
+				items.replace(
+					'confirmPassword',
+					<SignUpPasswordField
+						parent_this={this}
+						showingPassword={this.showingPassword.bind(this)}
+						hasConfirmFiled={hasConfirmFiled}
+						isConfirmFiled={true}
+					/>,
+					10
+				);
+			}
 		}
 	});
 });

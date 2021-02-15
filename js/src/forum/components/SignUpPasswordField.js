@@ -31,7 +31,7 @@ export default class SignUpPasswordField extends Component {
 	}
 
 	view() {
-		const { showingPassword } = this.attrs;
+		const { parent_this, showingPassword, hasConfirmFiled, isConfirmFiled } = this.attrs;
 
 		return (
 			// This markup is copied from `flarum/components/LogInModal` and then
@@ -41,36 +41,54 @@ export default class SignUpPasswordField extends Component {
 			<div className='Form-group PasswordField'>
 				<input
 					className={`FormControl ${settings('enablePasswordToggle') ? 'togglable' : ''}`}
-					name='password'
+					name={isConfirmFiled ? 'confirmPassword' : 'password'}
 					type={showingPassword() ? 'text' : 'password'}
-					placeholder={extractText(t('core.forum.sign_up.password_placeholder'))}
-					bidi={this.password}
+					placeholder={
+						isConfirmFiled
+							? t('nearata-signup-confirm-password.forum.field_placeholder')
+							: extractText(t('core.forum.sign_up.password_placeholder'))
+					}
+					value={isConfirmFiled ? parent_this.confirmPassword : parent_this.password()}
 					disabled={this.loading}
 					oninput={this.inputHandler.bind(this)}
 					style={{
 						color:
-							settings('enableInputColor') && !showingPassword()
+							settings('enableInputColor') &&
+							!showingPassword() &&
+							(!hasConfirmFiled || isConfirmFiled)
 								? this.strengthColor()
 								: undefined,
-						borderColor: settings('enableInputBorderColor')
-							? this.strengthColor()
-							: undefined,
+						borderColor:
+							settings('enableInputBorderColor') &&
+							(!hasConfirmFiled || isConfirmFiled)
+								? this.strengthColor()
+								: undefined,
 					}}
 				/>
 
 				{settings('enablePasswordToggle') ? <EyeButton showing={showingPassword} /> : null}
 
-				<StrengthIndicator
-					score={this.passwordScore()}
-					label={this.strengthLabel()}
-					color={this.strengthColor()}
-				/>
+				{!hasConfirmFiled || isConfirmFiled ? (
+					<StrengthIndicator
+						score={this.passwordScore()}
+						label={this.strengthLabel()}
+						color={this.strengthColor()}
+					/>
+				) : null}
 			</div>
 		);
 	}
 
 	inputHandler(e) {
+		const { parent_this, isConfirmFiled } = this.attrs;
+
 		const password = e.target.value;
+
+		if (isConfirmFiled) {
+			parent_this.confirmPassword = password;
+		} else {
+			parent_this.password(password);
+		}
 
 		if (password) {
 			// Get the score of the password strength
