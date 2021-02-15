@@ -29,7 +29,7 @@ php flarum cache:clear
 ```
 
 ## Conflicts
-- `glowingblue/password-strength` doesn't work with `therealsujitk/flarum-ext-show-password` wich can be removed, as `glowingblue/password-strength` adds a very similar functionnality.
+- `glowingblue/password-strength` doesn't work with `therealsujitk/flarum-ext-show-password` which can be removed, as `glowingblue/password-strength` adds a very similar functionality.
 
 ## Usage
 
