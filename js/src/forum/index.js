@@ -27,7 +27,10 @@ app.initializers.add(slug, () => {
 		if (app.forum.attribute(`${slug}.enablePasswordToggle`)) {
 			items.replace(
 				'password',
-				<LogInPasswordField showingPassword={this.showingPassword.bind(this)} />,
+				<LogInPasswordField
+					parent_this={this}
+					showingPassword={this.showingPassword.bind(this)}
+				/>,
 				20
 			);
 		}

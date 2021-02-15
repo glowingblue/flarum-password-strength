@@ -49,7 +49,7 @@ export default class SignUpPasswordField extends Component {
 							: extractText(t('core.forum.sign_up.password_placeholder'))
 					}
 					value={isConfirmFiled ? parent_this.confirmPassword : parent_this.password()}
-					disabled={this.loading}
+					disabled={parent_this.loading}
 					oninput={this.inputHandler.bind(this)}
 					style={{
 						color:

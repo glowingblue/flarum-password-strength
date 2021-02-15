@@ -16,7 +16,7 @@ const t = app.translator.trans.bind(app.translator);
 
 export default class LogInPasswordField extends Component {
 	view() {
-		const { showingPassword } = this.attrs;
+		const { parent_this, showingPassword } = this.attrs;
 
 		return (
 			// This markup is copied from `flarum/components/LogInModal` and then
@@ -29,8 +29,8 @@ export default class LogInPasswordField extends Component {
 					name='password'
 					type={showingPassword() ? 'text' : 'password'}
 					placeholder={extractText(t('core.forum.log_in.password_placeholder'))}
-					bidi={this.password}
-					disabled={this.loading}
+					bidi={parent_this.password}
+					disabled={parent_this.loading}
 				/>
 				<EyeButton showing={showingPassword} />
 			</div>
