@@ -8,38 +8,38 @@ Low-budget password strength estimation for your forum.
 
 [Click to view settings screenshot](https://i.ibb.co/r5ftZRb/ps-Settings.png)
 
-## Features
+## 🦸 Features
 
 - Based on [zxcvbn](https://github.com/dropbox/zxcvbn) (by [DropBox](https://github.com/dropbox)).
 - Password strength is labeled as 'Weak', 'Could be stronger' and 'Strong'.
 - Customizable display modes.
 - Compatible with `nearata/flarum-ext-signup-confirm-password`.
 
-## Installation
+## 📥 Installation
 
 ```bash
 composer require glowingblue/password-strength
 ```
 
-## Updating
+## ♻ Updating
 
 ```bash
 composer update glowingblue/password-strength
 php flarum cache:clear
 ```
 
-## Conflicts
+## 🚫 Conflicts
 - `glowingblue/password-strength` doesn't work with `therealsujitk/flarum-ext-show-password` which can be removed, as `glowingblue/password-strength` adds a very similar functionality.
 
-## Usage
+## 📖 Usage
 
 Just enable the extension and customize if you wish.
 
-## ToDo
+## 📝 To-do
 
 - I have no idea about how to implement it inside the reset password blade but you're very welcome to guide me or open a pull request on [GitHub](https://github.com/glowingblue/flarum-ext-password-strength).
 
-## Links
+## 🔗 Links
 
 - [Flarum Discuss post](https://discuss.flarum.org/d/26191-gb-password-strength)
 - [Source code on GitHub](https://github.com/glowingblue/flarum-ext-password-strength)
