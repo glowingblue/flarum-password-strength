@@ -7,9 +7,9 @@
  * file that was distributed with this source code.
  */
 
-import Component from 'flarum/Component';
-import Stream from 'flarum/utils/Stream';
-import extractText from 'flarum/utils/extractText';
+import Component from 'flarum/common/Component';
+import Stream from 'flarum/common/utils/Stream';
+import extractText from 'flarum/common/utils/extractText';
 import zxcvbn from 'zxcvbn';
 import EyeButton from './EyeButton';
 import StrengthIndicator from './StrengthIndicator';

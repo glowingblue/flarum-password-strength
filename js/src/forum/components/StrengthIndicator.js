@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-import Component from 'flarum/Component';
+import Component from 'flarum/common/Component';
 
 export default class StrengthIndicator extends Component {
 	view() {

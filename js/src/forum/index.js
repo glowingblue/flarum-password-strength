@@ -7,11 +7,11 @@
  * file that was distributed with this source code.
  */
 
-import app from 'flarum/app';
-import { extend } from 'flarum/extend';
-import LogInModal from 'flarum/components/LogInModal';
-import SignUpModal from 'flarum/components/SignUpModal';
-import Stream from 'flarum/utils/Stream';
+import app from 'flarum/common/app';
+import { extend } from 'flarum/common/extend';
+import LogInModal from 'flarum/forum/components/LogInModal';
+import SignUpModal from 'flarum/forum/components/SignUpModal';
+import Stream from 'flarum/common/utils/Stream';
 import { slug } from '../common';
 import LogInPasswordField from './components/LogInPasswordField';
 import SignUpPasswordField from './components/SignUpPasswordField';

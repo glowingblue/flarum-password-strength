@@ -7,8 +7,8 @@
  * file that was distributed with this source code.
  */
 
-import app from 'flarum/app';
-import icon from 'flarum/helpers/icon';
+import app from 'flarum/common/app';
+import icon from 'flarum/common/helpers/icon';
 import { slug } from '../common';
 
 // Make translation calls shorter
