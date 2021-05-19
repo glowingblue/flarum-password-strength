@@ -10,7 +10,7 @@
 import Component from 'flarum/common/Component';
 import Stream from 'flarum/common/utils/Stream';
 import extractText from 'flarum/common/utils/extractText';
-import { zxcvbn } from '@zxcvbn-ts/core'
+import { zxcvbn } from '@zxcvbn-ts/core';
 import EyeButton from './EyeButton';
 import StrengthIndicator from './StrengthIndicator';
 import { slug } from '../../common';
