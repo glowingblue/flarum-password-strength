@@ -10,7 +10,7 @@ Low-budget password strength estimation for your forum.
 
 ## 🦸 Features
 
-- Based on [zxcvbn](https://github.com/dropbox/zxcvbn) (by [DropBox](https://github.com/dropbox)).
+- Based on [zxcvbn-ts](https://zxcvbn-ts.github.io/zxcvbn/).
 - Password strength is labeled as 'Weak', 'Could be stronger' and 'Strong'.
 - Customizable display modes.
 - Compatible with `nearata/flarum-ext-signup-confirm-password`.
