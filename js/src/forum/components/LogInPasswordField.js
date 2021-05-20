@@ -7,8 +7,8 @@
  * file that was distributed with this source code.
  */
 
-import Component from 'flarum/Component';
-import extractText from 'flarum/utils/extractText';
+import Component from 'flarum/common/Component';
+import extractText from 'flarum/common/utils/extractText';
 import EyeButton from './EyeButton';
 
 // Make translation calls shorter

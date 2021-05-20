@@ -7,8 +7,8 @@
  * file that was distributed with this source code.
  */
 
-import Component from 'flarum/Component';
-import icon from 'flarum/helpers/icon';
+import Component from 'flarum/common/Component';
+import icon from 'flarum/common/helpers/icon';
 
 export default class EyeButton extends Component {
 	view() {
