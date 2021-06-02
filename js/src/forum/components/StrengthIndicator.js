@@ -10,6 +10,10 @@
 import Component from 'flarum/common/Component';
 
 export default class StrengthIndicator extends Component {
+	oninit(vnode) {
+		super.oninit(vnode);
+	}
+
 	view() {
 		const { label, color } = this.attrs;
 		return (

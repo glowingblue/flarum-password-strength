@@ -15,6 +15,10 @@ import EyeButton from './EyeButton';
 const t = app.translator.trans.bind(app.translator);
 
 export default class LogInPasswordField extends Component {
+	oninit(vnode) {
+		super.oninit(vnode);
+	}
+
 	view() {
 		const { parent_this, showingPassword } = this.attrs;
 

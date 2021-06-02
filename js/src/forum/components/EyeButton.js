@@ -11,6 +11,10 @@ import Component from 'flarum/common/Component';
 import icon from 'flarum/common/helpers/icon';
 
 export default class EyeButton extends Component {
+	oninit(vnode) {
+		super.oninit(vnode);
+	}
+
 	view() {
 		const { showing } = this.attrs;
 		return (
