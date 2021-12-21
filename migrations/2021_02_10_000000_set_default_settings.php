@@ -15,7 +15,7 @@ return [
 		/**
 		 * @var \Flarum\Settings\SettingsRepositoryInterface
 		 */
-		$settings = app('flarum.settings');
+		$settings = resolve('flarum.settings');
 
 		$prefix = 'glowingblue-password-strength';
 		$oldPrefix = 'the-turk-password-strength';
@@ -43,7 +43,7 @@ return [
 		/**
 		 * @var \Flarum\Settings\SettingsRepositoryInterface
 		 */
-		$settings = app('flarum.settings');
+		$settings = resolve('flarum.settings');
 
 		$prefix = 'glowingblue-password-strength';
 
