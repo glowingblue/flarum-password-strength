@@ -31,7 +31,7 @@ app.initializers.add(slug, () => {
 					parent_this={this}
 					showingPassword={this.showingPassword.bind(this)}
 				/>,
-				20
+				20,
 			);
 		}
 	});
@@ -48,7 +48,7 @@ app.initializers.add(slug, () => {
 					showingPassword={this.showingPassword.bind(this)}
 					hasConfirmFiled={hasConfirmFiled}
 				/>,
-				10
+				10,
 			);
 
 			if (hasConfirmFiled) {
@@ -60,7 +60,7 @@ app.initializers.add(slug, () => {
 						hasConfirmFiled={hasConfirmFiled}
 						isConfirmFiled={true}
 					/>,
-					10
+					10,
 				);
 			}
 		}

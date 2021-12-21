@@ -20,7 +20,8 @@ glowingblue-password-strength:
       otherOptions: Diğer Seçenekler
       enableInputColor: Şifre zorluğuyla birlikte girdinin ön plan rengini değiştir
       enableInputBorderColor: Şifre zorluğuyla birlikte girdinin kenarlık rengini değiştir
-      enablePasswordToggle: Kayıt Ol ve Giriş Yap ekranlarında şifre görünürlüğünün değiştirilmesine izin ver
+      enablePasswordToggle:
+        Kayıt Ol ve Giriş Yap ekranlarında şifre görünürlüğünün değiştirilmesine izin ver
   forum:
     strengthLabels:
       weak: Zayıf
