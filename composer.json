@@ -47,6 +47,9 @@
     "flarum-extension": {
       "title": "GB Password Strength",
       "category": "feature",
+      "optional-dependencies": [
+        "nearata/flarum-ext-signup-confirm-password"
+      ],
       "icon": {
         "name": "fas fa-user-shield",
         "backgroundColor": "#00a7e3",

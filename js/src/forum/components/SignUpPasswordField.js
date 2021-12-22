@@ -48,7 +48,7 @@ export default class SignUpPasswordField extends Component {
 							? t('nearata-signup-confirm-password.forum.field_placeholder')
 							: extractText(t('core.forum.sign_up.password_placeholder'))
 					}
-					value={isConfirmFiled ? parent_this.confirmPassword : parent_this.password()}
+					value={isConfirmFiled ? parent_this.confirmPassword() : parent_this.password()}
 					disabled={parent_this.loading}
 					oninput={this.inputHandler.bind(this)}
 					style={{
@@ -85,7 +85,7 @@ export default class SignUpPasswordField extends Component {
 		const password = e.target.value;
 
 		if (isConfirmFiled) {
-			parent_this.confirmPassword = password;
+			parent_this.confirmPassword(password);
 		} else {
 			parent_this.password(password);
 		}

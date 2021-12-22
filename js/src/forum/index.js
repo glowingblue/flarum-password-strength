@@ -39,7 +39,7 @@ app.initializers.add(slug, () => {
 	extend(SignUpModal.prototype, 'fields', function (items) {
 		if (!this.attrs.token) {
 			const hasConfirmFiled =
-				items.has('confirmPassword') && this.confirmPassword !== undefined;
+				items.has('nearataConfirmPassword') && this.confirmPassword !== undefined;
 
 			items.replace(
 				'password',
@@ -53,7 +53,7 @@ app.initializers.add(slug, () => {
 
 			if (hasConfirmFiled) {
 				items.replace(
-					'confirmPassword',
+					'nearataConfirmPassword',
 					<SignUpPasswordField
 						parent_this={this}
 						showingPassword={this.showingPassword.bind(this)}
