@@ -1,7 +1,8 @@
 /*
  * This file is part of glowingblue/password-strength.
  *
- * Copyright (c) 2021 Rafael Horvat.
+ * Copyright (c) 2024 Glowing Blue AG.
+ * Authors: Davide Iadeluca, Ian Morland, hasan-ozbey, iPurpl3x, the-turk.
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
@@ -24,7 +25,7 @@ app.initializers.add(slug, () => {
 	extend(SignUpModal.prototype, 'oninit', extendOninit);
 
 	extend(LogInModal.prototype, 'fields', function (items) {
-		if (app.forum.attribute(`${slug}.enablePasswordToggle`)) {
+		if (app.forum.attribute(`${slug}.enablePasswordToggle`) && items.has('password')) {
 			items.setContent(
 				'password',
 				<LogInPasswordField
