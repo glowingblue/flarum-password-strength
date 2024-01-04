@@ -48,7 +48,8 @@
       "title": "GB Password Strength",
       "category": "feature",
       "optional-dependencies": [
-        "nearata/flarum-ext-signup-confirm-password"
+        "nearata/flarum-ext-signup-confirm-password",
+        "ianm/twofactor"
       ],
       "icon": {
         "name": "fas fa-user-shield",
